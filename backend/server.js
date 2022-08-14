@@ -1,9 +1,14 @@
 const app = require("./app");
 
+const dotenv = require("dotenv");
+const connectDatabase = require("./config/database");
+
 //config
-DeviceMotionEvent.config({path:"backend/config/config.env"});
+dotenv.config({ path: "backend/config/config.env" });
 
+// Connect yo database
+connectDatabase();
 
-const server = app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server is working on http://localhost:${process.env.PORT}`);
 });
