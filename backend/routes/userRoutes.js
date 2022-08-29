@@ -8,3 +8,4 @@ router.route("/login").post(loginUser);
 router.route("/logout").post(logout);
 
 module.exports = router;
+
