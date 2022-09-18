@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=DM+Sans:wght@500&family=Fjalla+One&family=Lato&family=Lobster&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;700;900&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+.speedDial {
+  position: fixed;
+  right: 9vmax;
+  top: 1.3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+header {
+  font-family: 'Cairo', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.search-field {
+  width: 100%;
+}
+
+:root {
+
+  /**
+   * colors
+   */
+
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --eerie-black: hsl(0, 0%, 13%);
+  --salmon-pink: hsl(353, 100%, 78%);
+  --sandy-brown: hsl(29, 90%, 65%);
+  --bittersweet: hsl(0, 100%, 70%);
+  --ocean-green: hsl(152, 51%, 52%);
+  --davys-gray: hsl(0, 0%, 33%);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 100%, 100%);
+  --onyx: hsl(0, 0%, 27%);
+
+}
+
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+button {
+  background: none;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+img, ion-icon, button, a { display: block; }
+
+span { display: inline-block; }
+
+html {
+  font-family: "Poppins", sans-serif;
+  overscroll-behavior: contain;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font: inherit;
+}
+
+input::placeholder { font: inherit; }
+
+body { background: var(--white); }
+
+.container { padding: 0 15px; }
+.title {
+  color: var(--eerie-black);
+  font-size: var(--fs-5);
+  font-weight: var(--weight-600);
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--cultured);
+  margin-bottom: 30px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 15;
+  transition: 0.5s ease;
+}
+
+.header-main {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--cultured);
+}
+
+.header-logo { margin-bottom: 20px; }
+
+.header-logo img { margin: auto; }
+
+.header-search-container { position: relative; }
+
+.header-search-container .search-field {
+  font-size: var(--fs-7);
+  color: var(--onyx);
+  padding: 10px 15px;
+  padding-right: 50px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+}
