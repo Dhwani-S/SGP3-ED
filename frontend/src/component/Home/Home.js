@@ -118,7 +118,7 @@ const Home = () => {
                   <div class="category-item">
 
                     <div class="category-img-box">
-                      <img src="../../../images/icons/dress.svg" alt="frock" width="30" />
+                      <img src="../../../images/img/icons/dress.svg" alt="frock" width="30" />
                     </div>
 
                     <div class="category-content-box">
@@ -138,7 +138,7 @@ const Home = () => {
                   <div class="category-item">
 
                     <div class="category-img-box">
-                      <img src="../../../images/icons/shorts.svg" alt="shorts & jeans" width="30" />
+                      <img src="../../../images/img/icons/shorts.svg" alt="shorts & jeans" width="30" />
                     </div>
 
                     <div class="category-content-box">
