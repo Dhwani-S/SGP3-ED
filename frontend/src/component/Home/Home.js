@@ -9,6 +9,7 @@ const Home = () => {
     
     <Fragment>
    <MetaData title="ECOMMERCE & Dashboard" />
+   Home
     </Fragment >
   );
 };
