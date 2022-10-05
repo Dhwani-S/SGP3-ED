@@ -14,6 +14,7 @@ import store from "./store";
 import { loadUser } from "./actions/userAction";
 import UserOptions from "./component/layout/Header/UserOptions";
 import { useSelector } from "react-redux";
+<<<<<<< HEAD
 import Profile from "./component/User/Profile";
 import ProtectedRoute from "./component/Route/ProtectedRoute";
 import UpdateProfile from "./component/User/UpdateProfile";
@@ -44,6 +45,9 @@ import About from "./component/layout/About/About";
 import NotFound from "./component/layout/Not Found/NotFound";
 import Faq from "./component/layout/FAQ/faq";
 
+=======
+import Testimonial from "./component/layout/About/Testimonial";
+>>>>>>> 1f71cfe (css)
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
 

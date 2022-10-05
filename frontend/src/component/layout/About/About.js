@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./About.css";
 import { Button, Avatar } from "@material-ui/core";
@@ -70,3 +71,6 @@ const About = () => {
 };
 
 export default About;
+=======
+Hi
+>>>>>>> 1f71cfe (css)
