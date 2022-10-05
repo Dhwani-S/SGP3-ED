@@ -5,6 +5,7 @@ import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined'
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import MenuOutlinedIcon from '@material-ui/icons/MenuOutlined';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import { useSelector } from "react-redux";
 
 const Header = () => {
   
@@ -12,9 +13,12 @@ const Header = () => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
+  const { cartItems } = useSelector((state) => state.cart);
+  
   return <>
 
     <header>
+      <div class="overlay" data-overlay></div>
       <div class="header-main">
 
         <div class="container">
@@ -36,13 +40,21 @@ const Header = () => {
           <div class="header-user-actions">
 
             <button class="action-btn">
+{/* Drop down to be added */}
+
+        
+
+
+
+
 
               <PersonOutlineOutlinedIcon  onClick={() => orderLink('/account')}/>
+              
             </button>
 
             <button class="action-btn" onClick={() => orderLink('/orders')}>
               <LocalMallOutlinedIcon  />
-              <span class="count">0</span>
+              <span class="count">{cartItems.length}</span>
             </button>
 
           </div>
@@ -194,6 +206,25 @@ const Header = () => {
         </div>
 
       </nav>
+
+      <div class="mobile-bottom-navigation">
+
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <MenuOutlinedIcon />
+        </button>
+
+        <button class="action-btn">
+          <LocalMallOutlinedIcon />
+
+          <span class="count">{cartItems.length}</span>
+        </button>
+
+        <button class="action-btn">
+          <HomeOutlinedIcon fontSize="medium"/>
+        </button>
+
+      </div>
+
 
     </header>
 
