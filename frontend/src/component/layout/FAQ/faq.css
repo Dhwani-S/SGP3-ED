@@ -15,9 +15,10 @@
   }
   
   .accordion {
-    max-width: 600px;
+    max-width: 800px;
     margin: 2rem auto;
     border-radius: 2vh;
+    transition: 1s;
   }
   
   .accordion-title {
@@ -49,4 +50,142 @@
     .accordion {
       width: 90%;
     }
-  }
+  } 
+/*   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// *{
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// $bg-color: #F6F8FC;
+// $primary-text-color: #212943;
+// $secondary-text-color: #9EA6AE;
+// $details: #DEE4F1;
+
+// body {
+//   font-family: 'Poppins', sans-serif;
+//   font-size: 10px;
+//   background: $bg-color;
+// }
+
+
+// .heading {
+//   color: $primary-text-color;
+//   font-size: 1.5rem;
+//   font-weight: 600;
+//   margin-bottom: 2rem;
+// }
+
+// .container {
+//   margin: 0 auto;
+//   padding: 2rem;
+//   text-align: center;
+// }
+
+// form {
+//   display: flex;
+//   width: 35rem;
+//   background-color: #fff;
+//   align-items: center;
+//   margin: 0 auto;
+//   border-radius: 1rem;
+  
+//   svg {
+//     height: 1rem;
+//     fill: $secondary-text-color;
+//     position: fixed; 
+//     width: 4rem;
+//   }
+// }
+
+
+// .searchbar {
+//   font-family: 'Poppins', sans-serif;
+//   font-size: 1rem;
+//   font-weight: 400;
+//   border: none;  
+//   padding: 1rem;
+//   padding-left: 4rem;
+//   width: 100%;
+//   box-shadow: 0px 5px 13px 0px $details;
+//   border-radius: 0.8rem;
+// }
+
+// .searchbar:focus {  
+//   outline: none;
+//   box-shadow: 0 0 0 1.5px $details,  0px 5px 13px 0px $details;;
+// }
+
+// .faq {
+//   margin: 3rem 0;
+// }
+// .question-wrapper {
+//   width: 35rem;
+//   border-bottom: 1px solid $details; 
+//   margin: 0 auto;
+//   padding: 1rem;
+//   transition: 1s;
+// }
+
+// .question {
+//   display: flex;
+//   font-size: 1rem;
+//   font-weight: 500;
+//   color: $primary-text-color;  
+//   display: flex;
+//   justify-content: space-between;
+  
+//   svg {
+//     width: 1rem;
+//     height: 1.5rem;
+//     fill: $secondary-text-color;
+//   }
+  
+//   svg.active {
+//     transform: rotate(180deg);
+//   }
+  
+//   svg:hover {
+//     opacity: 0.8;
+//   }
+// }
+
+// button {
+//   background-color: transparent;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// button:focus {
+//   outline: none;
+// }
+
+// .answer {
+//   display: none;
+// }
+
+// .answer.active {
+//   display: block;
+//   text-align: left;
+//   padding-top: 1.5rem;
+//   font-weight: light;
+//   font-size: 0.8rem;
+//   line-height: 1.5;
+//   color: $secondary-text-color;
+//   height: 0%;
+//   animation: slidein 0.4s;
+//   animation-fill-mode: forwards;
+// }
+
+// @keyframes slidein {
+//   from {
+//     opacity: 0.3;
+//     transform: translateY(-20%)
+//   } to {
+//     opacity: 1;
+//     transform: translateY(0%);
+//   }
+// }
+*/

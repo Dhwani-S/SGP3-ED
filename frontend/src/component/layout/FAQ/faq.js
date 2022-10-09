@@ -29,7 +29,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className='FAQ-container'>
+    <div className=''>
       <h1 className="faq-heading">FAQs</h1>
       <div className="accordion">
         {accordionData.map(({ title, content }) => (

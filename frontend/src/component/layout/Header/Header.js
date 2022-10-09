@@ -24,7 +24,7 @@ const Header = () => {
         <div class="container">
 
           <a href="/" className="header-logo">
-            <img src="" alt="logo" width="120" height="36" />
+            <img src="../../../images/logo/logoFinal.png" alt="logo" width="90" height="90" />
           </a>
 
           <div class="header-search-container">
