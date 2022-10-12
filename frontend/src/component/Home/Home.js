@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import "./Home.css";
+// import Product from "./Product";
 import ProductCard from "./ProductCard.js";
 import MetaData from "../layout/MetaData";
 import { clearErrors, getProduct } from "../../actions/productAction";
@@ -336,11 +337,14 @@ const Home = () => {
                     <h2 class="title">Featured Products</h2>
 
                     <div class="product-grid">
-
+                      <h1>hi</h1>
                       {/*  start */}
+                      {console.log("hi: ",products)}
                       {products &&
                         products.map((product) => (
+                          <>
                           <ProductCard key={product._id} product={product} />
+                          </>
                         ))}
                       {/* end */}
 
