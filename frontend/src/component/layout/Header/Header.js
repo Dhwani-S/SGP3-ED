@@ -3,8 +3,8 @@ import "./Header.css";
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
-import MenuOutlinedIcon from '@material-ui/icons/MenuOutlined';
-import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+//import MenuOutlinedIcon from '@material-ui/icons/MenuOutlined';
+//import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 
 const Header = () => {
   
