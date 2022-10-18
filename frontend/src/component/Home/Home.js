@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import "./Home.css";
+// import Product from "./Product";
 import ProductCard from "./ProductCard.js";
 import MetaData from "../layout/MetaData";
 import { clearErrors, getProduct } from "../../actions/productAction";
@@ -31,7 +32,7 @@ const Home = () => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="ECOMMERCE" />
+          <MetaData title="REGALIA" />
           <main>
 
             {/* ------------------ Banner ---------------------- */}
@@ -95,7 +96,7 @@ const Home = () => {
                         Read here
                       </p>
 
-                      <a href="/about" class="banner-btn">Testimoties</a>
+                      <a href="/about" class="banner-btn">Testimonies</a>
 
                     </div>
 
@@ -118,7 +119,7 @@ const Home = () => {
                   <div class="category-item">
 
                     <div class="category-img-box">
-                      <img src="../../../images/img/icons/dress.svg" alt="frock" width="30" />
+                      <img src="../../../images/icons/dress.svg" alt="frock" width="30" />
                     </div>
 
                     <div class="category-content-box">
@@ -138,7 +139,7 @@ const Home = () => {
                   <div class="category-item">
 
                     <div class="category-img-box">
-                      <img src="../../../images/img/icons/shorts.svg" alt="shorts & jeans" width="30" />
+                      <img src="../../../images/icons/shorts.svg" alt="shorts & jeans" width="30" />
                     </div>
 
                     <div class="category-content-box">
@@ -336,11 +337,14 @@ const Home = () => {
                     <h2 class="title">Featured Products</h2>
 
                     <div class="product-grid">
-
+                      <h1>hi</h1>
                       {/*  start */}
+                      {console.log("hi: ",products)}
                       {products &&
                         products.map((product) => (
+                          <>
                           <ProductCard key={product._id} product={product} />
+                          </>
                         ))}
                       {/* end */}
 
